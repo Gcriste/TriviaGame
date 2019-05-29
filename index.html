@@ -7,6 +7,7 @@
 
 
     <link rel="stylesheet" href = "assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script
   src="https://code.jquery.com/jquery-3.4.1.js"
@@ -16,65 +17,98 @@
     <title>Trivia Game</title>
 </head>
 <body>
+    <div class = "megahead"></div>
+    <div class = "content">
     <div class ="container" >
         <div class = "row">
             <div class = "col-md-4"></div>
             <div class = "col-md-4">
+                <h2 class ="start" > Click the Button to start the Game!</h2>
              <button  id ="startButton" type="button" class="btn btn-primary">Start!</button>
             </div>
         </div>
        <main id ="mainsection">
+    
         <div class = "row">
-            <div class = "col-md-4"></div>
-            <div class = "col-md-4">
-                <h1 id = "header"> Trivia Game!</h1>
+            <div class = "col-md-3">
+             
             </div>
-        </div>
-
-        <div class = "row">
-            <div class = "col-md-4"></div>
-            <div class = "col-md-4">
-                <h2 id = "time-remaining"> Time Remaining:  </h2>
-                <h2 id = "out-of-time"></h2>
-            </div>
-        </div>
-
-        <div class = "row">
-            <div class ="col-md-4"></div>
-            <div class = "col-md-4">
-                <div class = "main">
+            <div class = "col-md-6">
+                    <h1 id = "header"> Trivia Game!</h1>
+                    <h2 id = "head2" >Do your best with this Classic Rock quiz! When you are finished hit the "done" button.</h2> 
                     
+            </div>
+            <div class = "col-md-3">
+              
+            </div>
+        </div>
+
+        <div class = "row" >
+            <div class = "col-md-3"></div>
+            <div class = "col-md-6" >
+               
+            </div>
+           
+        </div>
+        <div class = "row">
+                <div class = "col-md-4">
+                    
+                </div>
+                <div class = "col-md-4">
+                    <div class = "final">
+                        <div class = "total-correct"> Total Correct: </div>
+                            <div id = "final-correct" > </div>
+                        <div class = "total-incorrect"> Total Incorrect: </div>
+                            <div id = "final-wrong"></div>
+                            <div class = "unanswered-questions">Unanswered Questions: </div>
+                            <div id = "unanswered"></div>
+                    </div>
+    
+                </div>
+            </div>
+        <div class = "row">
+            <div class ="col-md-3">
+                    <img class = "image1" src = "assets/images/grateful dead.jpeg">
+                    <img class =  "image3"  src="assets/images/beatles.jpeg">
+                    <img src = "assets/images/fleetwood mac.jpeg">
+                    <img src = "assets/images/lynyrd skynyrd.jpeg">
+                    <img src = "assets/images/queen.jpeg">
+            </div>
+            <div class = "col-md-6" >
+                <div class = "main">
+                    <div id = "time">
+                        <h2 id = "time-remaining"> Time Remaining:  </h2>
+                        <h2 id = "out-of-time"></h2>
+                     </div>
                 </div>
                   
                 <div>
-                    <button id = "done"> Done</button>
+                    <button id = "done" type="button" class="btn btn-primary"> Done</button>
                 </div>     
-
+                
             </div>
-
+            <div class = "col-md-3">
+                    <img class = "image2" src = "assets/images/ledzep.jpeg">
+                    <img class = "image4" src = "assets/images/pink floyd.jpeg">    
+                    <img src = "assets/images/the doors.jpeg">
+                    <img src = "assets/images/who.png">
+                    <img src = "assets/images/van halen.jpeg">
+            </div>
 
         </div>
 
 
-        <div class = "row">
-            <div class = "col-md-4"></div>
-            <div class = "col-md-4">
-                <div class = "final">
-                        <div id = "final-correct"> </div>
-                        <div id = "final-wrong"></div>
-                        <div id = "unanswered"></div>
-                </div>
-
-            </div>
-        </div>
+       
         </main>
 
 
     </div>
     
+</div>
 
-
-
+<div class = "footer">
+    copyright %copy 2019
+</div>
 
 
 

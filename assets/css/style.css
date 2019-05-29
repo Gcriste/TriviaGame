@@ -1,5 +1,94 @@
+
+
+#startButton, #done{
+    font-size:30px;
+    border:20px;
+    margin:10px;
+    border-radius:5px;
+
+}
+.megahead{
+    border-bottom: 10px solid black;
+    margin-bottom:3px;
+}
+.footer{
+    border-top:10px solid black;
+    text-align:center;
+}
+.content{
+    background-color:#2d6d9e;
+}
+html{
+    background-color: #ffca68;
+}
+header{
+    color:#381eff;
+}
+.start{
+    color:white;
+}
+
+.main{
+    border:10px;
+}
+
+.total-correct, .total-incorrect, .unanswered-questions{
+    font-size:36px;
+    color:black;
+}
+#final-correct, #final-wrong, #unanswered{
+    font-size:28px;
+    color:#2d6d9e;
+}
 #mainsection{
     display:none;
     text-align:center;
+    font-family: 'Roboto Slab', serif;
+    background-color:#ffca68;
+    font-size:24px;
+   
+   
+}
+#time{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    margin-top:30px;
+    border-radius:25px;
 }
 
+
+img{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    margin-top:150px;
+    border-radius:25px;
+}
+
+
+
+input[type=radio]{
+   
+    opacity:.3;
+    margin:10px;
+    padding:10px;
+    cursor:pointer;
+    border:10px;
+}
+
+input[type=radio]:hover{
+opacity:1;
+
+}
+input[type=radio]:checked{
+opacity:1;
+
+
+}
