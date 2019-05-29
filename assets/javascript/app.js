@@ -126,7 +126,7 @@ else {
 };
 });
 
-$("body").on("click", "input[name='question-4']", function(){
+$("body").on("click", "input[name='question-3']", function(){
     console.log($(this).val());
 if($(this).val()==maininfo[3].correctGuess){
     correctAnswer++;
@@ -148,7 +148,8 @@ if($(this).val()==maininfo[4].correctGuess){
 }
 else {
     wrongAnswer++;
-    console.log(wrongAnswer)
+    wrong = $(this).val();
+    wrongBank.push(wrong)
 };
 });
 $("body").on("click", "input[name='question-5']", function(){
@@ -230,12 +231,12 @@ function gameOver(){
     $(".total-correct").toggle();
     $(".total-incorrect").toggle();
     $(".unanswered-questions").toggle();
-    $("#header").text("Game Over!")
+    $("#header").text("Game Over! Your score: "+ ((correctAnswer)/(maininfo.length)*100) + "%" );
     $("#head2").text("");
     $("#final-correct").append(correctAnswer + "/"+ maininfo.length+ "<br>"+ "Correct answers: " + correctBank + "<br>" + "<br>");
     $("#final-wrong").append(wrongAnswer + "/"+ maininfo.length + "<br>" + "Incorrect answers: " + wrongBank+ "<br>" + "<br>") ;
     $("#unanswered").text ((maininfo.length-(correctAnswer+wrongAnswer))+ "/" + maininfo.length)
- 
+ $("img").remove();
     console.log(correctAnswer)
     console.log(wrongAnswer)
 
@@ -277,7 +278,7 @@ var maininfo = [{
     correctGuess: "The Grateful Dead",
     gif:"sag"
 },{
-    question: "Who was famous for breaking up the Beatles",
+    question: "Who was famous for breaking up the Beatles?",
     answers: ["Stevie Nicks", "Yoko Ono", "Courtney Love", "Janis Joplin"],
     correctGuess: "Yoko Ono",
     gif:"sag"
@@ -289,7 +290,7 @@ var maininfo = [{
 },{
     question: "Who is the lead singer of Aerosmith?",
     answers: ["Freddie Mercury", "Steven Tyler", "Axl Rose", "David Lee Roth"],
-    correctGuess: "Ray Manzarek",
+    correctGuess: "Steven Tyler",
     gif:"sag"
    
 },{

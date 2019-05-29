@@ -9,11 +9,16 @@
 }
 .megahead{
     border-bottom: 10px solid black;
-    margin-bottom:3px;
+    
 }
 .footer{
     border-top:10px solid black;
     text-align:center;
+    background-color:Grey;
+    position: sticky;  
+    bottom: 0;  
+    width: 100%;  
+  
 }
 .content{
     background-color:#2d6d9e;
@@ -32,6 +37,10 @@ header{
     border:10px;
 }
 
+#header{
+    font-size:36px;
+    color:#2d6d9e;
+}
 .total-correct, .total-incorrect, .unanswered-questions{
     font-size:36px;
     color:black;
@@ -46,8 +55,7 @@ header{
     font-family: 'Roboto Slab', serif;
     background-color:#ffca68;
     font-size:24px;
-   
-   
+ 
 }
 #time{
     position: -webkit-sticky;
